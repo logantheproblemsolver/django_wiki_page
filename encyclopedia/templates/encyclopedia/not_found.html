@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Not Found
+{% endblock %}
+
+{% block body %}
+  {% if page %}
+    <p>The requested wiki you are looking for does not exist. Would you like to create it?</p>
+    <p>Create a new entry</p>
+  {% else %}
+    <p>The requested page you are looking for doesn't seem to exist</p>
+  {% endif %}
+  
+{% endblock %}
+
+
